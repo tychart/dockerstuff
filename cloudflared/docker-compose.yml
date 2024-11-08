@@ -1,0 +1,4 @@
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run --token eyJhIjoiNmNlZGY0MmE1MzBhY2YxZGI2ZWE4ODAzMTMzZWFlMmMiLCJ0IjoiMzA2ZjUyNTUtY2Q0Yy00ZWE3LTkwNDUtMjcxODg0OGE5NGM0IiwicyI6IllURXpNbUU0WkRZdE5UUXpOQzAwWW1SaExXRmhNVGt0TjJZME5qQXhZVEU0T1RNMCJ9

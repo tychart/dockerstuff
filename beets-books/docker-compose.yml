@@ -1,0 +1,16 @@
+---
+services:
+  beets:
+    image: linuxserver/beets:latest
+    container_name: beets
+    environment:
+      # Update as needed
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Denver 
+    volumes:
+      - ./config:/config
+      - ./scripts:/custom-cont-init.d
+      - /mnt/nas/Media/Audio/Audiobooks:/audiobooks
+      - /mnt/nas/Media/Backup/Audio/AudioBooks:/input
+    restart: unless-stopped
